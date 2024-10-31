@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum Website 5 </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <h2>Daftar Item</h2>
+        <ul id="list">
+          <li class="list-item" id="1">Item 1</li>
+          <li class="list-item" id="2">Item 2</li>
+          <li class="list-item" id="3">Item 3</li>
+        </ul>
+        <button id="addItem">Tambah Item</button>
+        <div class="remove-container">
+          <input type="number" id="removeIndex" placeholder="Masukkan nomor item" min="1">
+          <button id="removeItem">Hapus Item</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2>Simpan Data dengan localStorage</h2>
+        <input type="text" id="username" placeholder="Masukkan nama Anda">
+        <button id="saveName">Simpan Nama</button>
+        <button id="deleteName">Delete Nama</button>
+        <p id="greeting"></p>
+      </div>
+    
+      <div class="card">
+        <h2>Assynchronus</h2>
+        <button id="loadData">Klik saya</button>
+        <p id="data"></p>
+      </div>
+
+    <div id="posts-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

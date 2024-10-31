@@ -1,0 +1,157 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background-color: #1a202c; /* Dark background */
+  color: #e2e8f0; /* Light text */
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Header styles */
+h1 {
+  color: #ffcc00; /* Yellow for header */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Card styles */
+.card {
+  background: #2d3748; /* Dark gray for card background */
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+h2 {
+  color: #ff8c00; /* Orange for subheaders */
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* List styles */
+#list {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.list-item {
+  background: #4a5568; /* Darker gray background */
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  border-left: 4px solid #ff8c00; /* Orange border */
+  transition: background 0.2s ease;
+}
+
+.list-item:hover {
+  background: #2d3748; /* Slightly lighter gray on hover */
+}
+
+/* Button styles */
+button {
+  background: #ff8c00; /* Orange */
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 1rem;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #cc7000; /* Darker orange */
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#removeItem {
+  background: #e53e3e; /* Red for remove button */
+}
+
+#removeItem:hover {
+  background: #c53030;
+}
+
+/* Input styles */
+input[type="text"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #4a5568;
+  background: #2d3748;
+  color: #e2e8f0;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #ff8c00; /* Orange for focus */
+}
+
+/* Paragraph styles */
+p {
+  color: #a0aec0;
+  margin: 1rem 0;
+}
+
+#greeting {
+  font-weight: 500;
+  color: #ffcc00; /* Yellow text */
+}
+
+/* Link styles */
+a {
+  display: inline-block;
+  color: #ffcc00;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+a:hover {
+  background: #4a5568; /* Dark gray background on hover */
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  .card {
+    padding: 1.5rem;
+  }
+  
+  button {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+  }
+}

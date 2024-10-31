@@ -1,0 +1,288 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  line-height: 1.6;
+  padding: 2rem;
+}
+
+/* Header styles */
+h1 {
+  color: #ff6b35; /* Orange accent for header */
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Card styles */
+.card {
+  background: #1e1e1e; /* Dark gray for card background */
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+  border: 1px solid #333; /* Border for card */
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 8px rgba(255, 107, 53, 0.2); /* Shadow on hover */
+}
+
+h2 {
+  color: #ff6b35; /* Orange for subheaders */
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+/* List styles */
+#list {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.list-item {
+  background: #2a2a2a; /* Darker gray background for list item */
+  padding: 0.75rem 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 6px;
+  border-left: 4px solid #ff6b35; /* Orange border on the left */
+  transition: background 0.2s ease;
+  color: #e0e0e0;
+}
+
+.list-item:hover {
+  background: #353535; /* Darker gray on hover */
+}
+
+/* Button styles */
+button {
+  background: #ff6b35; /* Orange for buttons */
+  color: #121212; /* Dark text on button */
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  margin: 0 1rem 1rem 0;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #ff8b4d; /* Lighter orange on hover */
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+#removeItem {
+  background: #ff4d4d; /* Red for remove button */
+}
+
+#removeItem:hover {
+  background: #ff6b6b; /* Lighter red on hover */
+}
+
+/* Input styles */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #333; /* Darker border for input */
+  background: #1e1e1e; /* Same as card background */
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #e0e0e0; /* Light text inside input */
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  outline: none;
+  border-color: #ff6b35; /* Orange border on focus */
+}
+
+/* Paragraph styles */
+p {
+  color: #b0b0b0; /* Light gray for paragraphs */
+  margin: 1rem 0;
+}
+
+#greeting {
+  font-weight: 500;
+  color: #ff6b35; /* Orange text */
+}
+
+/* Link styles */
+a {
+  display: inline-block;
+  color: #ff6b35; /* Orange link */
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+a:hover {
+  background: rgba(255, 107, 53, 0.1); /* Light orange background on hover */
+}
+
+/* Loading spinner */
+.loading {
+  text-align: center;
+  padding: 2rem;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #333; /* Dark gray border */
+  border-top: 4px solid #ff6b35; /* Orange top border */
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* API Data styling */
+.api-data {
+  display: grid;
+  gap: 2rem;
+}
+
+.section {
+  background: #1e1e1e;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+  border: 1px solid #333;
+}
+
+.section h3 {
+  color: #ff6b35;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #333;
+}
+
+/* Posts styling */
+.posts {
+  display: grid;
+  gap: 1rem;
+}
+
+.post {
+  padding: 1rem;
+  background: #1e1e1e;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.post h4 {
+  color: #ff6b35;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+/* Users styling */
+.users {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.user {
+  padding: 1rem;
+  background: #1e1e1e;
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+.user h4 {
+  color: #ff6b35;
+  margin-bottom: 0.5rem;
+}
+
+/* Photos styling */
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.photo {
+  text-align: center;
+}
+
+.photo img {
+  width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  border: 2px solid #333;
+}
+
+/* Error styling */
+.error {
+  color: #ff4d4d;
+  padding: 1rem;
+  background: #2a2a2a;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #ff4d4d;
+}
+
+.disabled {
+  opacity: 0.5;
+  cursor: not-allowed !important;
+}
+
+.disabled:hover {
+  background: #ff4d4d !important;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+      padding: 1rem;
+  }
+  
+  h1 {
+      font-size: 2rem;
+  }
+  
+  .card {
+      padding: 1.5rem;
+  }
+  
+  button {
+      width: 100%;
+      margin-bottom: 0.5rem;
+      margin-right: 0;
+  }
+
+  .users {
+      grid-template-columns: 1fr;
+  }
+  
+  .photos {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
